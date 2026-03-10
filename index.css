@@ -1,0 +1,8 @@
+.conatiner{
+    display: flex;
+    padding: 2px;
+}
+
+.name{
+    margin: 20px;
+}
