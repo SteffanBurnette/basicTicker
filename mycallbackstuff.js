@@ -1,6 +1,6 @@
 
 //A function that is invoking a callback that was passed as 
-// a parameter .
+// a parameter.
 function notifyUser(notificationFn){
     notificationFn()
 }
