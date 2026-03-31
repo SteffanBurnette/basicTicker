@@ -23,7 +23,7 @@ function processFile(){
 
 function notifyUser(){
 
-    return new Promise(() => {
+    return new Promise((resolve, reject) => {
         console.log("Notifying the user")
 
         setTimeout(() =>{
@@ -33,7 +33,10 @@ function notifyUser(){
 }
 
 try{
-    await uploadFiles()
+    await uploadFile()
+    await processFile()
+    await notifyUser()
+    console.log("All steps completed!")
 
 }catch(err){
     console.log(err)
